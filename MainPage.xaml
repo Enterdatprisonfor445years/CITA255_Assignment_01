@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticeSetup.MainPage">
+
+    <VerticalStackLayout>
+        <Label Text="Hello from Line 1!" 
+               FontSize="50" 
+               TextColor="Red" 
+               HorizontalTextAlignment="Center"
+               FontFamily="airstrike"
+               />
+        <Label Text="Hello from Line 2!" 
+        FontSize="50" 
+        TextColor="AliceBlue" 
+        HorizontalTextAlignment="Center"
+               FontFamily="airstrike"
+        />
+        <Label Text="Hello from Line 3!" 
+        FontSize="50" 
+        TextColor="ForestGreen" 
+        HorizontalTextAlignment="Center"
+               FontFamily="airstrike"
+        />
+        <Label Text="Hello from Line 4!" 
+        FontSize="50" 
+        TextColor="LightYellow" 
+        HorizontalTextAlignment="Center"
+               FontFamily="airstrike"
+        />
+
+        <Entry x:Name="BillEntry" 
+           Placeholder="Enter bill amount" 
+           PlaceholderColor="Red" 
+           WidthRequest="200" 
+           Keyboard="Numeric"/>
+
+        <!-- Action Button -->
+        <Button Text="Calculate Tip" 
+            TextColor="Red" 
+            BackgroundColor="Black" 
+            WidthRequest="200" 
+            BorderWidth="5" 
+            BorderColor="Blue"
+            Clicked="OnCalculateClicked"/>
+
+        <!-- Output Displays -->
+        <Label x:Name="TipResultLabel" 
+           Text="Tip: $0.00" 
+           FontSize="24" 
+           HorizontalTextAlignment="Center" 
+           FontFamily="airstrike"/>
+
+        <Label x:Name="TotalResultLabel" 
+           Text="Total: $0.00" 
+           FontSize="24" 
+           HorizontalTextAlignment="Center" 
+           FontFamily="airstrike"/>
+
+        <!-- Your Image -->
+        <Image Source="hulkstein.jpg" 
+           WidthRequest="200" 
+           HeightRequest="200"/>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>
